@@ -121,7 +121,7 @@ const StatCard = memo(
         </div>
       </div>
     </div>
-  )
+  ),
 );
 
 const AboutPage = () => {
@@ -129,7 +129,7 @@ const AboutPage = () => {
   const { totalProjects, totalCertificates, YearExperience } = useMemo(() => {
     const storedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
     const storedCertificates = JSON.parse(
-      localStorage.getItem("certificates") || "[]"
+      localStorage.getItem("certificates") || "[]",
     );
 
     const startDate = new Date("2024-09-14");
@@ -201,7 +201,7 @@ const AboutPage = () => {
         animation: "fade-left",
       },
     ],
-    [totalProjects, totalCertificates, YearExperience]
+    [totalProjects, totalCertificates, YearExperience],
   );
 
   return (
@@ -268,7 +268,7 @@ const AboutPage = () => {
             </div>
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
               <a
-                href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo"
+                href="https://drive.google.com/file/d/1RDDFTaPvgim4jMkeuQUthFFFd0pVZ8KL/view?usp=drive_link"
                 className="w-full lg:w-auto"
               >
                 <button
